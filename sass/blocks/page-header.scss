@@ -1,0 +1,23 @@
+@import "../variables";
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 85px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 400px;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 648px;
+  }
+}
