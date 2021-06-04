@@ -1,0 +1,107 @@
+@import "../variables";
+
+.user-list__login {
+  position: relative;
+
+  display: block;
+  padding: 18px 21px;
+  padding-left: 49px;
+
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 19px;
+  left: 21px;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.3;
+
+  path {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 60px;
+  }
+
+  .user-list__login {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+
+    font-size: 0;
+
+    &:hover .user-list__login-icon {
+      opacity: 1;
+
+      path {
+        fill: #826550;
+      }
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.3;
+
+      path {
+        fill: #ffffff
+      }
+    }
+  }
+
+  .user-list__login-icon {
+    top: 29px;
+    left: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: auto;
+    max-width: 160px;
+  }
+
+  .user-list__login {
+    width: auto;
+    height: auto;
+    padding: 25px 30px 23px 50px;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+    }
+
+    &:hover .user-list__login-icon {
+      opacity: 0.3;
+
+      path {
+        fill: #000000;
+      }
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.1;
+    }
+  }
+
+  .user-list__login-icon {
+    left: 15px;
+  }
+}

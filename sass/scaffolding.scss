@@ -1,5 +1,25 @@
 @import "./variables.scss";
 
+/* pt-sans-narrow-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-sans-narrow-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -7,7 +27,7 @@ body {
 
   font-size: 18px;
   line-height: 27px;
-  font-family: "Arial", sans-serif;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
   color: #9c9792;
   font-style: normal;
 
